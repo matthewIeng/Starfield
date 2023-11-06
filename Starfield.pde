@@ -29,8 +29,7 @@ double angle;
 Particle(){
   x=250;
   y=250;
-  double nmm=Math.random()*7+2;
-  speed=nmm;
+  speed=5;
   colour=(int)(Math.random()*3);
   size=10;
   angle=Math.random()*2*Math.PI;
@@ -57,7 +56,7 @@ Oddball(){
   x=250;
   y=250;
   speed=0.5;
-  size=100;
+  size=50;
   angle=Math.random()*2*Math.PI;
 }
 
