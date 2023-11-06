@@ -1,11 +1,16 @@
-Particle[] star=new Particle[1000];
+Particle[] star=new Particle[500];
 void setup()
 {
 
   size(500,500);
- for(int i=0;i<star.length;i++){
+ for(int i=0;i<star.length - 25;i++){
 
     star[i]= new Particle ();
+  }
+  
+  for(int i=475;i<star.length;i++){
+
+    star[i]= new Oddball ();
   }
 }
 void draw()
